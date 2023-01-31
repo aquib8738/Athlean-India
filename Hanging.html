@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\Asus\Desktop\form-bootstrap-5\style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@1,300&family=Sofia+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Raleway:wght@200&family=Roboto:ital,wght@1,100&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oprn Sans', sans-serif;
+
+
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 88.5vh;
+        }
+        
+        .about-img{
+            min-width: 100%;
+        height:520px;
+        }
+        
+        .services img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .gall img {
+            width: 100%;
+            max-height: 290px;
+            object-fit: fill;
+        }
+        
+        .underline::after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 45%;
+            background: linear-gradient(to right, orange 50%, rgb(3, 255, 3) 100%);
+            margin-bottom: 20px;
+        }
+        
+        input {
+            margin-bottom: 10px;
+        }
+        
+        .off {
+            background-image: url("image/ser1.jfif");
+            height: 100%;
+        }
+        
+        .hov:hover {
+            transform: scale(1.2);
+        }
+        
+        .hov {
+            transition: transform .2s;
+        }
+        
+        .nav-item:hover {
+            background-color: rgb(9, 251, 9);
+            color: beige;
+        }
+        /*footer*/
+        
+        #hov a:hover {
+            border-radius: 20px;
+            background-color: #15ee6f;
+            color: white;
+        }
+        
+        .main {
+/*            margin-top: 20px;*/
+            background-color: rgb(15, 24, 67);
+            height: 100%;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .inn {
+            display: flex;
+            justify-items: center;
+/*            margin: 20px;*/
+            /*            margin-left: 266px;*/
+        }
+        
+        .box {
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        
+        .box a {
+            color: #eee;
+        }
+        
+        .box h3 {
+            color: rgb(27, 244, 27);
+        }
+        
+        .box a {
+            text-decoration: none;
+        }
+        
+        .credit {
+            margin-top: 30px;
+            text-align: center;
+            color: #eee;
+            font-size: 24px;
+        }
+        
+        .credit span {
+            color: rgb(255, 162, 0);
+        }
+        
+        @media only screen and (max-width: 850px) {
+            .inn {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /*//////subbmi form*/
+        
+        .form-area {
+            padding-top: 7%;
+        }
+        
+        .row.single-form {
+            box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .left {
+            background: blueviolet;
+            padding: 200px 98px;
+        }
+        
+        .left h2 {
+            font-family: poppins;
+            color: #fff;
+            font-weight: 700;
+            font-size: 48px;
+        }
+        
+        .left h2 span {
+            font-weight: 100;
+        }
+        
+        .single-form {
+            background: #fff;
+        }
+        
+        .right {
+            padding: 70px 100px;
+            position: relative;
+        }
+        
+        .right i {
+            position: absolute;
+            font-size: 80px;
+            left: -27px;
+            top: 40%;
+            color: #fff;
+        }
+        
+        .form-control {
+            border: 2px solid #000;
+        }
+        
+        .right button {
+            border: none;
+            border-radius: 0;
+            background: #252525;
+            width: 180px;
+            color: #fff;
+            padding: 15px 0;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        
+        .right button:hover {
+            background-color: #252525;
+        }
+        /*responsive*/
+        
+        @media (min-width:768px) and (max-width:991px) {
+            .right i {
+                top: -52px;
+                transform: rotate(90deg);
+                left: 50%;
+            }
+        }
+        
+        @media (max-width:767px) {
+            .left {
+                padding: 90px 15px;
+                text-align: center;
+            }
+            .left h2 {
+                font-size: 25px;
+            }
+            .right {
+                padding: 25px;
+            }
+            .right i {
+                top: -52px;
+                transform: rotate(90deg);
+                left: 46%;
+            }
+            .right button {
+                width: 150px;
+                padding: 12px 0;
+            }
+        }
+        /*        feed back*/
+        
+        #menu__toggle {
+            opacity: 0;
+        }
+        
+        #menu__toggle:checked~.menu__btn>span {
+            transform: rotate(45deg);
+        }
+        
+        #menu__toggle:checked~.menu__btn>span::before {
+            top: 0;
+            transform: rotate(0);
+        }
+        
+        #menu__toggle:checked~.menu__btn>span::after {
+            top: 0;
+            transform: rotate(90deg);
+        }
+        
+        #menu__toggle:checked~.menu__box {
+            visibility: visible;
+            left: 0;
+        }
+        
+        .menu__btn {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        
+        .menu__btn>span,
+        .menu__btn>span::before,
+        .menu__btn>span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #616161;
+            transition-duration: 0.25s;
+        }
+        
+        .menu__btn>span::before {
+            content: "";
+            top: -8px;
+        }
+        
+        .menu__btn>span::after {
+            content: "";
+            top: 8px;
+        }
+        
+        .menu__box {
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            list-style: none;
+            background-color: #eceff1;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+            transition-duration: 0.25s;
+        }
+        
+        .menu__item {
+            display: block;
+            padding: 12px 24px;
+            color: #333;
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            transition-duration: 0.25s;
+        }
+        
+        .menu__item:hover {
+            background-color: #cfd8dc;
+        }
+
+
+        
+/*footer*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;;
+  color: white;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 7px;
+  border-radius: 50%
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 7px;
+  border-radius: 50%
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 7px;
+  border-radius: 50%
+}
+
+.fot a{
+    text-decoration: none;
+    color: white;
+}
+
+.add .fa{
+background: black;
+color: white;
+padding: 7px;
+border-radius: 50%;
+}
+
+.fot a:hover{
+    color: gray;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar /////////////// -->
+
+<div style="background-image:linear-gradient(to right, #0f0c29, #302b63, #24243e); height: 70px; ">
+    <nav class=" navbar-light  ">
+        <div class="container-fluid ">
+            <a class="" href="#"><img src="image\logo2.jpeg" style="width: 65px; max-height: 70px; float:right; padding:5px" class=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </nav>
+</div>
+
+
+
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/hanging1.jpeg"  class="d-block w-100 img-fluid" style="height:670px" alt="...">
+    </div>
+   
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- about us -->
+    <section class=" my-5" id="about">
+        <div class="text-center">
+            <h1 class="display-4 ">About Us</h1>
+            <hr class="w-25 mx-auto ">
+        </div>
+
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-right" data-aos-duration="1500">
+                    <figure><img src="image/hanging5.jpeg" class="img-fluid about-img" ></figure>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 " data-aos="fade-left" data-aos-duration="1500">
+                    <h1>Hanging Hammock</h1>
+                    <h3>99000 ₹ GST Extra</h3>
+                   <p style="color:gray;">Inflatable Snow Raft Material – TPU(Thermoplastic Polyurethane)Taiwan</p>
+                   <p style="color:gray;">Colors – Red, Blue, Orange, Yellow, Green</p>
+                   <p style="color:gray;">Warranty – Manufacturing Defect Warranty</p>
+                   <p><span style="color:gray;">Shipping is not FREE:Shipping:</span> Policy,Return Policy</p>
+                    <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">Check More</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row g-0">
+        <div class="col-lg-4 col-md-6 col-12" data-aos="fade-right" data-aos-duration="1500">
+            <figure><img src="image/hanging3.jpeg" style="width:100%; height:400px; " class="px-0"></figure>
+        </div>
+
+         <div class="col-lg-8 col-md-6 col-12 text-white" data-aos="fade-left" data-aos-duration="1500">
+            <div style="width: 100%; height:400px; background-color:  rgb(255, 55, 0);" class="px-0 d-flex justify-content-center align-items-center flex-column" >
+                <h1 class="fs-1 fw-bolder">HAMMOCK CAMPKING</h1>
+                <p style="margin:20px 40px">The ultimate hang-anywhere hammock. This Grand Trunk hammock is super easy to hang, Light weight and compressible to the size of a softball, durable parachute nylon that won’t let you down whether hiking, backpacking, at camp, in the backyard, beach, or park.</p>
+            </div>
+
+         </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid my-5">
+    <img src="image/hanging2.jpeg" width="100%" height="650px">
+</div>
+
+
+
+
+
+
+<div style="margin:70px 0px" data-aos="zoom-out-up" data-aos-duration="1500">
+    <h2 style="text-align:center;">TRUNK HAMMOCKS</h2>
+    <p style="text-align:center;"> Lightweight Nylon Parachute Hammocks.<br>
+The ultimate hang-anywhere hammock. This Grand Trunk hammock is super easy to hang, Light weight and compressible to the size of a softball, durable parachute nylon that won’t let you down whether hiking, backpacking, at camp, in the backyard, beach, or park.
+
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row g-0">
+        <div class="col-lg-4 col-md-6 col-12" style="    ">
+            <figure><img src="image/hanging8.jpeg" data-aos="zoom-in-up" data-aos-duration="1500" style=" height:100%; width:100%;"></figure>
+        </div>
+
+         <div class="col-lg-8 col-md-6 col-12 text-white" data-aos="zoom-in-up" data-aos-duration="1500">
+            <div style="width: 100%; height:370px; background-color: rgb(56, 136, 239);" class=" d-flex justify-content-center align-items-center flex-column">
+                <h1 class="fs-1 fw-bolder">FREE STRAPS & <BR>CARABINERS</h1>
+                <p style="margin:20px 40px">The ultimate hang-anywhere hammock. This Grand Trunk hammock is super easy to hang, Light weight and compressible to the size of a softball, durable parachute nylon that won’t let you down whether hiking, backpacking, at camp, in the backyard, beach, or park.</p>
+            </div>
+
+         </div>
+    </div>
+</div>
+
+
+
+
+<div class="container">
+    <div class="row g-0">
+        
+         <div class="col-lg-7 col-md-6 col-12 text-white">
+            <div style="width: 100%; height:370px; background-color:gray;" class="px-0 g-0 d-flex justify-content-center align-items-center flex-column" data-aos="zoom-in" data-aos-duration="1500">
+                <h1 class="fs-1 fw-bolder">FREE STRAPS & <br>CARABINERS</h1>
+                <p style="margin:20px 40px">Every hammock we sell includes a set of free tree straps.We believe in the Leave No Trace principles of protecting our trees while we hang, and while giving you the easiest possible way to relax in your hammock.</p>
+            </div>
+
+         </div>
+
+          <div class="col-lg-5 col-md-6 col-12 g-0  " data-aos="zoom-in" data-aos-duration="1500">
+            <figure><img src="image/hanging4.jpeg" style="width:100%; height:370px; "></figure>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid my-5" data-aos="flip-left" data-aos-duration="1500">
+    <img src="image/hanging10.jpeg" width="100%" height="650px">
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container "  data-aos="fade-down" data-aos-duration="1500"> 
+    <h1 class="text-center mb-5 fw-bolder" style="  font-family: 'Segoe UI', Arial, sans-serif;">Single Parachute Nylon Hammock</h1>
+<div class="row mx-5">
+<div class="col-lg-6 col-md-8 col-10" >
+    <h3 class="w3-container w3-cursive">MULTI-FUNCTION</h3>
+    <p style="font-size:15px;  font-family: 'Times New Roman', Times, serif">LIGHTWEIGHT PORTABLE HAMMOCK WITH HIGH STRENGTH – Extra roomy single person hammock that is ready for your next hammock camping or backpacking adventure and ready to hang as soon as you get it</p>
+
+    <br>
+    <h3 class="w3-container w3-cursive">EASY SETUP</h3>
+    <p style="font-size:15px;   font-family: 'Times New Roman', Times, serif;
+">
+        The best travel hammock includes upgraded and high quality nautical grade carabiners and a free 5mm rope thickness cord (5ft long when tied up or 10ft long when not tied up) which allows you to quickly and safely attach your Single Hammock wherever you want to relax.</p>
+</div>
+
+
+<div class="col-lg-6 col-md-8 col-10" >
+    <h3 class="w3-container w3-cursive">SUPER CONVENIENT</h3>
+    <p style="font-size:15px;  font-family: 'Times New Roman', Times, serif"> Wide use – Ideal for relaxing when camping, hiking, backpacking or festival; From the great outdoors to your own backyard, this camping hammock is an ultra portable and comfortable alternative to a tent, sleeping pad, ground mat, or swing</p>
+
+    <br>
+    <h3 class="w3-container w3-cursive">HIGH QUALITY</h3>
+    <p style="font-size:15px;  font-family: 'Times New Roman', Times, serif">The nylon hammock is made from 100% parachute nylon (70D nylon) and finished off with triple stitching; The parachute hammcok can endure the elements so you don’t have to, all while supporting a weight capacity of up to 180 kg</p>
+</div>
+
+ </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid my-5">
+    <img src="image/hanging5.jpeg" width="100%" height="650px">
+</div>
+
+
+
+
+<div class="container">
+    <div class="row mx-5"> 
+        <div class="col-lg-6 col-md-8 col-10" data-aos="fade-right" data-aos-duration="1500"><figure><img src="image/hanging3.jpeg" ></figure></div>
+
+
+         <div class="col-lg-6 col-md-8 col-10" data-aos="fade-left" data-aos-duration="1500">
+             <h2 class="text-center">HAMMOCK</h2>
+             <ul style="font-size:15px;  font-family: 'Times New Roman', Times, serif; color: gray;">
+                    <li>100% Parachute Nylon</li>
+                    <li>Starter Rope Kit: 5mm rope thickness cord</li>
+                    <li>Nautical-Grade Carabiners</li>
+                    <li>181 kg Capacity</li>
+                    <li>10’6” x 5’</li>
+                    <li>Disclaimer: due to different computer monitors/calibrations colors may vary slightly from the picture</li>
+             </ul>
+         </div>
+    </div>
+</div>
+
+
+
+
+<div class="container" data-aos="zoom-in-down" data-aos-duration="1500">
+
+    <div class="row g-0">
+        <div class="col-lg-4 col-md-5 col-12">
+            <figure><img src="image/hanging6.jpeg" style="width:100%; height:350px"></figure>
+        </div>
+           
+          <div class="col-lg-4 col-md-6 col-12" >
+              <figure><img src="image/hanging7.jpeg " style="width:100%; height:350px"></figure>
+          </div>
+
+            <div class="col-lg-4 col-md-7 col-12" >
+                <figure><img src="image/hanging9.jpeg" style="width:100%; height:350px"></figure>
+            </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+<div  style="background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); color: white; padding: 20px;" data-aos="flip-right"
+data-aos-duration="1700">
+
+<div class="container " 
+>
+<div class="row justify-content-end ml fot"  >
+    <div class="col-lg-4 col-md-6 col-10 " style="position: cursor;">
+    <h1>Quick Link</h1>
+   <a href="#"> <p>Home</p></a>
+   <a href="#"> <p>About Us </p></a>
+    <a href="#"><p>Gallary</p></a>
+    <a href="#"><p>Service</p></a>
+    <a href=""><p>Contact US</p></a>   
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-10">
+    <h1>Keep connecting</h1>
+   <a href="#"> <p class="fa fa-facebook"></p><span> &nbsp Like on Facebook</span></a>
+      <br>
+
+       <a href="#"><p class="fa fa-twitter"></p><span> &nbsp Follow on twitter</span></a>
+       <br>
+         
+   <a href="#"> <p class="fa fa-linkedin"></p><span> &nbsp Follow on linkedin</span></a>
+    <br>
+
+     <a href="#"><p class="fa fa-instagram"></p><span> &nbsp Follow on instagram </span></a>
+     <br>
+    
+       
+    </div>
+
+
+    
+    <div class="col-lg-3 col-md-6 col-10 add">
+    <h1>Contact Us</h1>
+     <a href="#"> <p class="fa fa-home"></p><span > &nbsp khairani Road Sakinaka mumbai</span></a>
+      <br>
+
+       <a href="#"><p class="fa fa-mobile"></p><span>&nbsp  &nbsp 919347493677</span></a>
+       <br>
+         
+   <a href="#"> <p class="fa fa-envelope"></p><span> &nbsp aquibiqbal@gmail.com</span></a>
+    <br>
+
+    </div>
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="#about">About Us</a></li>
+            <li><a class="menu__item" href="#gallray">Gallary</a></li>
+            <li><a class="menu__item" href="">Services</a></li>
+            <li><a class="menu__item" href="#form">Contact US</a></li>
+        </ul>
+    </div>
+
+
+<script type="text/javascript">
+      AOS.init();
+</script>
+</body>
+</html>
